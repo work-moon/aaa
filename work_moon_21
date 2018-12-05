@@ -1,7 +1,7 @@
 import os
-os.chdir(r'D:\work')
+os.chdir(r'C:\Users\monic\Desktop\컴퓨팅 사고력\컴퓨팅사고력 파일')
 
-with open("route20181203.txt", encoding='utf8') as f:
+with open("route20181205.txt", encoding='utf8') as f:
     d = f.read()
 
 print('ROUTE_ID ', 'ROUTE_NM ', 'ST_STA_NM ', 'ED_STA_NM ')
