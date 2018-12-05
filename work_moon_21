@@ -1,0 +1,12 @@
+import os
+os.chdir(r'D:\work')
+
+with open("route20181203.txt", encoding='utf8') as f:
+    d = f.read()
+
+print('ROUTE_ID ', 'ROUTE_NM ', 'ST_STA_NM ', 'ED_STA_NM ')
+
+information = d.split('^')
+for k in information:
+    more = k.split("|")
+    if more[7].find('신촌') >= 0 : print(more[0], more[1], more[4], more[7])
